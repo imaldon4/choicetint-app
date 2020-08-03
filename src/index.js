@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom'
 import './index.css';
 
-
+// useState() is a hook, so that it hooks this symbl to this state.
 function Button() {
-    const [counter, setCounter] = useState(0);
-    return <button onClick={() => setCounter(counter + 1)}>{counter}</button>;
+    const [counter, setCounter] = useState(5);
+    return <button onClick={() => setCounter(counter * 2)}>{counter}</button>;
 }
 
 ReactDOM.render(
