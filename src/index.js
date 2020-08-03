@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom'
 import './index.css';
 
-function Hello() {
-    return <div>Hello React!</div>;
+function Button() {
+    return <button>Test</button>;
 }
 
 ReactDOM.render(
-    <Hello />,
+    React.createElement(Button),
     document.getElementById('root')
 );
